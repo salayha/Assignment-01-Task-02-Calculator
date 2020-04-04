@@ -9,11 +9,11 @@
     tools:context="pk.edu.pucit.calculator.MainActivity">
 
     <TextView
-        android:id="@+id/tv_equation"
+        android:id="@+id/cal_equation"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:gravity="right|bottom"
-        android:text="1200*20*60"
+        android:text="9*5"
         android:textColor="@color/white"
         android:textSize="9pt"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,16 +21,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_result"
+        android:id="@+id/cal_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:text="5,760,000"
+        android:text="45"
         android:textColor="@color/white"
         android:textSize="18pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_equation" />
+        app:layout_constraintTop_toBottomOf="@+id/cal_equation" />
 
     <View
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_result">
+        app:layout_constraintTop_toBottomOf="@+id/cal_result">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,6 +62,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:id="@+id/cal_AC"
                 android:text="AC"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
@@ -73,6 +74,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="/"
+                android:id="@+id/cal_divide"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -83,6 +85,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="X"
+                android:id="@+id/cal_multiply"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -93,6 +96,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="-"
+                android:id="@+id/cal_subtract"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -112,6 +116,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="7"
+                android:id="@+id/cal_7"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -122,6 +127,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="8"
+                android:id="@+id/cal_8"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -132,6 +138,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="9"
+                android:id="@+id/cal_9"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
             <TextView
@@ -141,6 +148,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="+"
+                android:id="@+id/cal_add"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -159,6 +167,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="4"
+                android:id="@+id/cal_4"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -169,6 +178,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="5"
+                android:id="@+id/cal_5"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -179,6 +189,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="6"
+                android:id="@+id/cal_6"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -189,6 +200,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="%"
+                android:id="@+id/cal_percent"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -206,6 +218,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:id="@+id/cal_1"
                 android:text="1"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
@@ -216,6 +229,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:id="@+id/cal_2"
                 android:text="2"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
@@ -227,6 +241,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="3"
+                android:id="@+id/cal_3"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
             <TextView
@@ -236,6 +251,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="del"
+                android:id="@+id/cal_del"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -255,6 +271,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="00"
+                android:id="@+id/cal_00"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -265,6 +282,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="0"
+                android:id="@+id/cal_0"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -275,6 +293,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="."
+                android:id="@+id/cal_dot"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
@@ -285,6 +304,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="="
+                android:id="@+id/cal_equals"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
